@@ -6,7 +6,7 @@ This project is a console-based application developed in C++ that manages studen
 
 1. **Register Students**
 2. **Check Student Credentials**
-3. **Student View
+3. **Student View**
 4. **View My Attendance Report**
 5. **Admin View**
 6. **Student Login**
