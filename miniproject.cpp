@@ -45,7 +45,7 @@ public:
 int StudentAttendanceManagement ::student_isAlreadyExist(string username)
 {
     ifstream read;
-    read.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\StudentData.csv", ios::app);
+    read.open("studentDATA\\StudentData.csv", ios::app);
 
     if (read)
     {
@@ -162,7 +162,7 @@ int StudentAttendanceManagement ::studentCounter()
 int StudentAttendanceManagement ::countStudentAttendance(string username)
 {
     ifstream file;
-    file.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\" + username + ".csv");
+    file.open("studentDATA\\" + username + ".csv");
     if (file.fail())
     {
         cout << "File failed to open..." << endl;
@@ -214,7 +214,7 @@ int StudentAttendanceManagement ::markstudentattendance(string username)
     cout << "------------------------------------------\n";
     ofstream out;
     char ch;
-    out.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\" + username + ".csv", ios::app);
+    out.open("studentDATA\\" + username + ".csv", ios::app);
     string date;
     cout << "\nIf student is present -> P ,absent -> A , or late -> L\n";
     cout << "Mark attendance using capital letters\n";
@@ -254,7 +254,7 @@ int StudentAttendanceManagement ::deleteStudentbyusername()
             cin >> passlineNumber;
         }
         fstream read_file;
-        read_file.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\StudentData.csv");
+        read_file.open("studentDATA\\StudentData.csv");
 
         if (read_file.fail())
         {
@@ -278,7 +278,7 @@ int StudentAttendanceManagement ::deleteStudentbyusername()
             return 1;
         }
         ofstream write_file;
-        write_file.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\StudentData.csv");
+        write_file.open("studentDATA\\StudentData.csv");
         if (write_file.fail())
         {
             cout << "Error opening file..." << endl;
@@ -306,7 +306,7 @@ int StudentAttendanceManagement ::checkListOfStudentsRegistered()
     system("cls");
     cout << "Note :-\n\tIn file first line contains username , and\n\tnext line contains password of it , respectively\n";
     ifstream file;
-    file.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\StudentData.csv");
+    file.open("studentDATA\\StudentData.csv");
     stringstream buffer;
     buffer << file.rdbuf();
     string file_contents;
@@ -432,12 +432,12 @@ int StudentAttendanceManagement ::Register_students()
             cout << "Enter student PRN number : ";
             cin >> st->prnNo;
 
-            ofstream out("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\StudentData.csv", ios::app);
+            ofstream out("studentDATA\\StudentData.csv", ios::app);
             out << st->username << "\n";
             out << st->password << "\n";
             out.close();
 
-            ofstream out1("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\" + st->username + ".csv", ios::app);
+            ofstream out1("studentDATA\\" + st->username + ".csv", ios::app);
 
             out1 << "first name : " << st->stname << "\n";
             out1 << "middle name : " << st->fatherName << "\n";
@@ -449,7 +449,7 @@ int StudentAttendanceManagement ::Register_students()
             out1 << "prn no. : " << st->prnNo << "\n";
             out1.close();
 
-            ofstream out2("C:\\Users\\OMKAR\\Desktop\\mini project\\allStudentRegisterLog\\" + st->username + ".csv", ios::app);
+            ofstream out2("allStudentRegisterLog\\" + st->username + ".csv", ios::app);
             out2 << "first name : " << st->stname << "\n";
             out2 << "middle name : " << st->fatherName << "\n";
             out2 << "last name : " << st->surName << "\n";
@@ -483,7 +483,7 @@ int StudentAttendanceManagement ::checkStudentCredentials(string username, strin
     // if it exsist return 1 else 0
 
     ifstream read;
-    read.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\StudentData.csv", ios::app);
+    read.open("studentDATA\\StudentData.csv", ios::app);
 
     if (read)
     {
@@ -589,7 +589,7 @@ int StudentAttendanceManagement ::studentView()
 int StudentAttendanceManagement ::viewMyAttendanceReport(string username)
 {
     ifstream file;
-    file.open("C:\\Users\\OMKAR\\Desktop\\mini project\\studentDATA\\" + username + ".csv", ios::app);
+    file.open("studentDATA\\" + username + ".csv", ios::app);
     stringstream buffer;
     buffer << file.rdbuf();
     string file_contents;
@@ -620,7 +620,7 @@ int StudentAttendanceManagement ::adminLogin()
     cout << "\n ---------------------------------\n";
 
     string username;
-    string password="minipro@2023";
+    string password="mypro@2023";
     string pass;
     cout << "\n Enter username : ";
     cin >> username;
@@ -634,7 +634,7 @@ int StudentAttendanceManagement ::adminLogin()
         ch = _getch();
     }
 
-    if (username == "minipro" && pass == password)
+    if (username == "mypro@2023" && pass == password)
     {
         adminView();
         getch();
