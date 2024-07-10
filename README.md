@@ -169,9 +169,6 @@ Checks if a student with the given username already exists in the system.
     ```
 5. Open a pull request
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Contact
 Your Name - Omkar Tipugade [ omtipugade3904@gmail.com ]
 
