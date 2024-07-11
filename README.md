@@ -2,8 +2,10 @@
 
 This project is a console-based application developed in C++ that manages student attendance. It includes functionalities for both students and administrators to interact with the system. The project consists of several functions to handle registration, login, attendance marking, and report viewing.
 
-**allStudentRegisterLog** - This directory stores all student's data, deleted and existing.
-**studentDATA** - This directory stores only existing student's data, in this folder (StudentData.csv) file the existing student's usernames and passwords
+**allStudentRegisterLog** 
+This directory stores all student's data, deleted and existing.
+**studentDATA** 
+This directory stores only existing student's data, in this folder [StudentData.csv] file the existing student's usernames and passwords
 ---
 # Features
 
