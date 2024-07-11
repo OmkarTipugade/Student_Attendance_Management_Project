@@ -5,7 +5,7 @@ This project is a console-based application developed in C++ that manages studen
 **allStudentRegisterLog** 
 This directory stores all student's data, deleted and existing.
 **studentDATA** 
-This directory stores only existing student's data, in this folder [StudentData.csv] file the existing student's usernames and passwords
+This directory stores only existing student's data, in this folder (`StudentData.csv`) file the existing student's usernames and passwords
 # Features
 
 1. **Register Students**
