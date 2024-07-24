@@ -173,9 +173,6 @@ Checks if a student with the given username already exists in the system.
     ```
 5. Open a pull request
 
-## Contact
-Your Name - Omkar Tipugade [ omtipugade3904@gmail.com ]
-
 ---
 
 Feel free to customize this README file further based on your specific project details and preferences!
