@@ -147,13 +147,13 @@ Checks if a student with the given username already exists in the system.
     ```
 3. Compile the program:
     ```sh
-    g++ main.cpp -o AttendanceSystem
+    g++ miniproject.cpp -o miniproject
     ```
 
 ### Usage
 1. Run the compiled program:
     ```sh
-    ./AttendanceSystem
+    ./miniproject
     ```
 2. Follow the on-screen instructions to navigate through the system.
 
